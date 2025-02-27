@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indução Mútua e Transformadores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="trovao.png">    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Indução Mútua e Transformadores</h1>
+
+        <div class="box">
+            <h2>O que é Indução Mútua?</h2>
+            <p>A indução mútua ocorre quando uma corrente elétrica variável em uma bobina gera um campo magnético, induzindo uma tensão em outra bobina próxima.</p>
+        </div>
+
+        <div class="box">
+            <h2>O que é um Transformador?</h2>
+            <p>Dispositivo que altera a tensão elétrica em um circuito de corrente alternada (CA) através da indução mútua.</p>
+        </div>
+
+        <div class="box">
+            <h2>Relação de Espiras</h2>
+            <p>A relação entre tensão de entrada (Vp) e saída (Vs) é dada por:</p>
+            <div class="formula">Vs / Vp = Ns / Np</div>
+        </div>
+
+        <div class="box">
+            <h2>Calculadora de Transformador</h2>
+            <p>Digite os valores abaixo para calcular a tensão de saída:</p>
+
+            <div class="input-group">
+                <label>Tensão Primária (Vp):</label>
+                <input type="number" id="vp" placeholder="V">
+
+                <label>Espiras Primário (Np):</label>
+                <input type="number" id="np" placeholder="N">
+
+                <label>Espiras Secundário (Ns):</label>
+                <input type="number" id="ns" placeholder="N">
+            </div>
+
+            <button onclick="calcular()">Calcular</button>
+
+            <div class="result" id="resultado">Resultado aparecerá aqui...</div>
+        </div>
+
+        <div class="box">
+            <h2>Aplicações</h2>
+            <p>Redes elétricas para transmissão eficiente de energia.</p>
+            <p>Fontes de alimentação de eletrônicos.</p>
+            <p>Indústria e motores elétricos.</p>
+        </div>
+    </div>
+
+    <div class="footer">Feito por Mateus S.</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
